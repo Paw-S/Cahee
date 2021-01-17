@@ -3,54 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./sass/main.css" />
+    <title>Cahee</title>
   </head>
   <body>
-    <header>
-      <p>Cahee</p>
+    <header class="container">
+      <p class="logo">Cahee</p>
       <nav>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Services</li>
-          <li>Gallery</li>
-          <li>Blog</li>
-          <li>Contact</li>
+        <ul class="header__menu">
+          <li class="header__element"><a href="">About</a></li>
+          <li class="header__element"><a href="">Home</a></li>
+          <li class="header__element"><a href="">Services</a></li>
+          <li class="header__element"><a href="">Gallery</a></li>
+          <li class="header__element"><a href="">Blog</a></li>
+          <li class="header__element"><a href="">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section>
-        <h1>Fresh Life</h1>
-        <p>
+      <section class="container hero">
+        <h1 class="hero__title">Fresh Life</h1>
+        <p class="hero__text">
           Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
           enim ad minim veniam, quis nostrud exercitation ullamco.
         </p>
-        <button>Get free now</button>
+        <button class="hero__button">Get free now</button>
       </section>
-      <section>
-        <h2>About Us</h2>
-        <p>
-          Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
-        </p>
-        <p>
-          Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error
-          sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-          eaque ipsa quae ab illo inventore.
-        </p>
-      </section>
-      <section>
-        <h2>Our Services</h2>
-        <ul>
-          <li>Online Shopping</li>
-          <li>Quality Product</li>
-          <li>Domestic & International Delivery</li>
-          <li>Well Organized</li>
-        </ul>
-      </section>
-      <section>
+      <div class="about-us--bgc">
+        <section class="container about-us">
+          <h2 class="about-us__title">About Us</h2>
+          <p class="about-us__text">
+            Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum.
+          </p>
+          <p class="about-us__text">
+            Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error
+            sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+            eaque ipsa quae ab illo inventore.
+          </p>
+        </section>
+      </div>
+      <div class="services--bgc">
+        <section class="container services">
+          <h2 class="services__title">Our Services</h2>
+          <ul>
+            <li>Online Shopping</li>
+            <li>Quality Product</li>
+            <li>Domestic & International Delivery</li>
+            <li>Well Organized</li>
+          </ul>
+        </section>
+      </div>
+      <section class="container">
         <h2>Gallery</h2>
         <p>
           Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -66,7 +72,7 @@
         </ul>
         <button>VIEW MORE</button>
       </section>
-      <section>
+      <section class="container">
         <h3>Subscribe To Us</h3>
         <p>
           Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -79,7 +85,7 @@
           <button type="submit">Subscribe</button>
         </form>
       </section>
-      <section>
+      <section class="container">
         <h2>Blog</h2>
         <p>
           Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -106,7 +112,7 @@
         <button>View more</button>
       </section>
     </main>
-    <footer>
+    <footer class="container">
       <h2>Contact</h2>
       <p>
         For new projects, ideas, business or anything you'd like to discuss,
@@ -141,7 +147,7 @@
         </li>
       </ul>
     </footer>
-    <section>
+    <section class="container">
       <p>© 2015 Company. All right reserved.</p>
       <p>Cahee</p>
       <p>Made with <span>love</span> by Auskteez</p>

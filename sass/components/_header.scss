@@ -1,0 +1,36 @@
+header {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  padding-top: 20px;
+}
+.header__menu {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+.header__element {
+  display: inline-block;
+  width: auto;
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0px;
+  }
+  & a {
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+    }
+    color: $-primary-text-color;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
+  }
+}

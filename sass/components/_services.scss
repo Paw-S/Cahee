@@ -1,0 +1,19 @@
+.services {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+    align-items: center;
+  }
+  //   position: relative
+}
+.services--bgc {
+  background-color: #70bfff;
+}
+.services__title {
+  @extend .section__title;
+  //   position: absolute;
+  //   content: "";
+  color: $-secondary-text-color;
+}

@@ -45,19 +45,19 @@ a {
   text-decoration: none;
 }
 
-.section__title, .hero__title, .about-us__title, .services__title {
+.section__title, .hero__title, .about-us__title, .services__title, .gallery__title {
   font-size: 90px;
   font-weight: 700;
 }
 
 @media screen and (max-width: 767px) {
-  .section__title, .hero__title, .about-us__title, .services__title {
+  .section__title, .hero__title, .about-us__title, .services__title, .gallery__title {
     font-size: 50px;
     display: inline-block;
   }
 }
 
-.button, .hero__button {
+.button, .hero__button, .gallery__button {
   display: block;
   width: 200px;
   height: 55px;
@@ -221,5 +221,94 @@ header {
 
 .services__title {
   color: #ffffff;
+}
+
+.services__element {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 100px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .services__element {
+    width: 350px;
+    height: 70px;
+    margin-top: 15px;
+  }
+}
+
+.services__element__text {
+  margin-left: 71px;
+  color: #262626;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+@media screen and (max-width: 767px) {
+  .services__element__text {
+    margin-left: 25px;
+  }
+}
+
+.services__icon {
+  margin-right: 22px;
+  width: 47px;
+  height: 44px;
+  fill: #262626;
+}
+
+@media screen and (max-width: 767px) {
+  .services__icon {
+    margin-right: 10px;
+  }
+}
+
+.gallery--bgc {
+  background-color: #ffe92f;
+}
+
+@media screen and (max-width: 767px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+    align-items: center;
+  }
+}
+
+.gallery__title {
+  color: #262626;
+}
+
+.gallery__text {
+  color: #262626;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 27px;
+  text-align: center;
+}
+
+.gallery__button {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 27px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  background-color: #5585a2;
+}
+
+@media screen and (max-width: 767px) {
+  .gallery__button {
+    margin-top: 15px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

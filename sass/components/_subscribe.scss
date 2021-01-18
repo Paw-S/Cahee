@@ -1,0 +1,29 @@
+.subscribe {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+    align-items: center;
+  }
+}
+.subscribe__title {
+  @media screen and (max-width: 767px) {
+    display: inline-block;
+  }
+  //   position: absolute;
+  //   content: "";
+  color: $-primary-text-color;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 27px;
+}
+.subscribe__text {
+  @media screen and (max-width: 767px) {
+    margin-top: 15px;
+  }
+  color: $-primary-text-color;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 27px;
+}

@@ -105,40 +105,66 @@
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim
             veniam.
           </p>
-          <form action="send">
-            <label for="">
-              <input type="email" placeholder="Your email address..." />
+          <form class="subscribe__form" action="send">
+            <label for="subscribe">
+              <input
+                name="subscribe"
+                class="subscribe__input"
+                type="email"
+                placeholder="Your email address..."
+              />
             </label>
-            <button type="submit">Subscribe</button>
+            <button class="submit__button" type="submit">Subscribe</button>
           </form>
         </section>
       </div>
-      <section class="container">
-        <h2>Blog</h2>
-        <p>
-          Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit.
-        </p>
-        <ul>
-          <li>
-            <p>20<br />nov</p>
-            <p>Green Smoothies: Too Much of a Good Thing?</p>
-            <p>By Auskteez - 2 hours ago</p>
-          </li>
-          <li>
-            <p>14<br />nov</p>
-            <p>Growing Food and a “Thirst” for Innovation</p>
-            <p>By Auskteez - 3 hours ago</p>
-          </li>
-          <li>
-            <p>10<br />nov</p>
-            <p>Pesticides & Food: What You Need to Know</p>
-            <p>By Auskteez - 6 hours ago</p>
-          </li>
-        </ul>
-        <button>View more</button>
-      </section>
+      <div class="blog--bgc">
+        <section class="container blog">
+          <h2 class="blog__title">Blog</h2>
+          <p class="blog__text">
+            Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit.
+          </p>
+          <ul class="blog__list">
+            <li class="blog__element">
+              <img src="./img/img11.png" alt="" />
+              <p class="blog__element__text--one">20<br />nov</p>
+              <p class="blog__element__text--two">
+                Green Smoothies: Too Much of a Good Thing?
+                <br /><br />
+                <span class="blog__element__text--three"
+                  >By Auskteez - 2 hours ago</span
+                >
+              </p>
+            </li>
+            <li class="blog__element">
+              <img src="./img/img12.png" alt="" />
+              <p class="blog__element__text--one">14<br />nov</p>
+              <p class="blog__element__text--two">
+                Growing Food and a “Thirst” for Innovation
+                <br /><br />
+                <span class="blog__element__text--three"
+                  >By Auskteez - 3 hours ago</span
+                >
+              </p>
+            </li>
+            <li class="blog__element">
+              <img src="./img/img13.png" alt="" />
+              <p class="blog__element__text--one">10<br />nov</p>
+              <p class="blog__element__text--two">
+                Pesticides & Food: What You Need to Know
+                <br /><br />
+                <span class="blog__element__text--three"
+                  >By Auskteez - 6 hours ago</span
+                >
+              </p>
+            </li>
+          </ul>
+          <button class="blog__botton">View more</button>
+        </section>
+      </div>
     </main>
     <footer class="container">
       <h2>Contact</h2>

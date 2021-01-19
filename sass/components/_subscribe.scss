@@ -27,3 +27,33 @@
   font-weight: 300;
   line-height: 27px;
 }
+.subscribe__form {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.subscribe__input {
+  @media screen and (max-width: 767px) {
+    width: 350px;
+    height: 40px;
+    margin-top: 15px;
+  }
+  width: 570px;
+  height: 55px;
+  border: 1px solid #262626;
+  padding-left: 15px;
+}
+.submit__button {
+  @extend .button;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  background-color: #96b92c;
+
+  color: $-secondary-text-color;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 27px;
+  text-transform: uppercase;
+}

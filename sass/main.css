@@ -45,13 +45,13 @@ a {
   text-decoration: none;
 }
 
-.section__title, .hero__title, .about-us__title, .services__title, .gallery__title, .blog__title {
+.section__title, .hero__title, .about-us__title, .services__title, .gallery__title, .blog__title, .footer__title {
   font-size: 90px;
   font-weight: 700;
 }
 
 @media screen and (max-width: 767px) {
-  .section__title, .hero__title, .about-us__title, .services__title, .gallery__title, .blog__title {
+  .section__title, .hero__title, .about-us__title, .services__title, .gallery__title, .blog__title, .footer__title {
     font-size: 50px;
     display: inline-block;
   }
@@ -135,13 +135,18 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 30px;
     align-items: center;
   }
 }
 
 .hero__title {
   color: #262626;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__title {
+    margin-top: 30px;
+  }
 }
 
 .hero__text {
@@ -178,7 +183,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 30px;
     align-items: center;
   }
 }
@@ -190,6 +194,12 @@ header {
 
 .about-us__title {
   color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .about-us__title {
+    margin-top: 30px;
+  }
 }
 
 .about-us__text {
@@ -210,7 +220,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 30px;
     align-items: center;
   }
 }
@@ -221,6 +230,12 @@ header {
 
 .services__title {
   color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .services__title {
+    margin-top: 30px;
+  }
 }
 
 .services__element {
@@ -279,13 +294,18 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 30px;
     align-items: center;
   }
 }
 
 .gallery__title {
   color: #262626;
+}
+
+@media screen and (max-width: 767px) {
+  .gallery__title {
+    margin-top: 30px;
+  }
 }
 
 .gallery__text {
@@ -339,7 +359,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 30px;
     align-items: center;
   }
 }
@@ -354,6 +373,12 @@ header {
 @media screen and (max-width: 767px) {
   .subscribe__title {
     display: inline-block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe__title {
+    margin-top: 30px;
   }
 }
 
@@ -422,12 +447,25 @@ header {
   color: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+  .blog__title {
+    margin-top: 30px;
+  }
+}
+
 .blog__text {
+  padding-top: 30px;
   color: #ffffff;
   font-size: 17px;
   font-weight: 300;
   line-height: 25px;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .blog__text {
+    padding-top: 10px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -494,5 +532,89 @@ header {
   font-weight: 300;
   line-height: 27px;
   text-transform: uppercase;
+}
+
+.footer__bgc {
+  background-image: url(../../img/img14.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.footer__title {
+  color: #262626;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__title {
+    margin-top: 30px;
+  }
+}
+
+.footer__text {
+  margin-top: 48px;
+  color: #262626;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 25px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__text {
+    margin-top: 10px;
+  }
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__label {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__label {
+    margin-bottom: 15px;
+  }
+  .footer__label:first-child {
+    margin-top: 15px;
+  }
+}
+
+.footer__label:first-child {
+  margin-top: 46px;
+}
+
+.footer__input {
+  width: 500px;
+  height: 50px;
+  padding-left: 20px;
+  background-color: #00c4c4;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__input {
+    width: 350px;
+    height: 35px;
+  }
+}
+
+.footer__input:focus {
+  outline: white 3px solid;
 }
 /*# sourceMappingURL=main.css.map */

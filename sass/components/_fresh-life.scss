@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 30px;
     align-items: center;
   }
   //   position: relative;
@@ -12,6 +11,9 @@
   @extend .section__title;
   //   position: absolute;
   //   content: "";
+  @media screen and (max-width: 767px) {
+    margin-top: 30px;
+  }
   color: $-primary-text-color;
 }
 .hero__text {

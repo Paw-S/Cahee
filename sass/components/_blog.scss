@@ -16,9 +16,16 @@
   @extend .section__title;
   //   position: absolute;
   //   content: "";
+    @media screen and (max-width: 767px) {
+    margin-top: 30px;
+  }
   color: $-secondary-text-color;
 }
 .blog__text {
+  @media screen and (max-width: 767px) {
+    padding-top: 10px;
+  }
+  padding-top: 30px;
   color: $-secondary-text-color;
   font-size: 17px;
   font-weight: 300;

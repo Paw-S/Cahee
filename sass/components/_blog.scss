@@ -16,7 +16,7 @@
   @extend .section__title;
   //   position: absolute;
   //   content: "";
-    @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin-top: 30px;
   }
   color: $-secondary-text-color;
@@ -88,6 +88,9 @@
 }
 .blog__botton {
   @extend .button;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   background-color: #b92c3f;
 

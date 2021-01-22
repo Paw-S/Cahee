@@ -49,6 +49,9 @@
 }
 .submit__button {
   @extend .button;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
   margin-top: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   background-color: #96b92c;

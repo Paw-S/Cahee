@@ -61,9 +61,17 @@
     }
   }
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  // grid-template: repeat (3, 1fr) / repeat(3, 1fr);
 }
 .gallery__item {
   @media screen and (max-width: 767px) {
     width: 400px;
   }
+  // width: 300px;
+}
+.one {
+  grid-row-start: span 3;
+  grid-column-start: span 3;
 }

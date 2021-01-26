@@ -407,6 +407,8 @@ header {
 
 .gallery__list {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 @media screen and (max-width: 767px) {
@@ -429,6 +431,11 @@ header {
   .gallery__item {
     width: 400px;
   }
+}
+
+.one {
+  grid-row-start: span 3;
+  grid-column-start: span 3;
 }
 
 @media screen and (max-width: 767px) {

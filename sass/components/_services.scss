@@ -15,23 +15,22 @@
   @media screen and (max-width: 767px) {
     margin-top: 30px;
   }
-  position: absolute;
-  content: "";
-  top: 331px;
-  left: 600px;
-  color: $-secondary-text-color;
-}
-.services__img {
-  @media screen and (max-width: 768px) {
-    display: none;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    content: "";
+    z-index: 99;
+    top: 331px;
+    left: 797px;
+    color: $-secondary-text-color;
   }
-  position: absolute;
-  content: "";
 }
 .services__list {
   @media screen and (max-width: 767px) {
     padding-bottom: 20px;
+    margin: auto;
+    padding-top: 10px;
   }
+  margin-left: 265px;
   padding-top: 179px;
   padding-bottom: 150px;
 }
@@ -73,4 +72,18 @@
   width: 47px;
   height: 44px;
   fill: $-primary-text-color;
+}
+.services__img--tomato {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  position: absolute;
+  content: "";
+  width: 462px;
+  height: 527px;
+  top: 100px;
+  left: 873px;
+  background-image: url(../../img/img_copy35.png);
+  background-repeat: no-repeat;
+  z-index: 1;
 }

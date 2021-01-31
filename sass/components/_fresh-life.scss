@@ -5,10 +5,10 @@
     justify-content: center;
     align-items: center;
   }
-  // background-image: url(../../img/img33.png);
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  //   position: relative;
+  background-image: url(../../img/img33.png);
+
+  width: 1500px;
+  height: 1264px;
 }
 .hero__title {
   @extend .section__title;

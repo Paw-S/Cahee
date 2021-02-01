@@ -10,14 +10,22 @@
     padding-top: 30px;
     align-items: center;
   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .blog__title {
   @extend .section__title;
-  //   position: absolute;
-  //   content: "";
   @media screen and (max-width: 767px) {
     margin-top: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    margin-top: 100px;
   }
   color: $-secondary-text-color;
 }
@@ -25,7 +33,11 @@
   @media screen and (max-width: 767px) {
     padding-top: 10px;
   }
-  padding-top: 30px;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    width: 590px;
+  }
+  margin-top: 30px;
   color: $-secondary-text-color;
   font-size: 17px;
   font-weight: 300;
@@ -40,6 +52,13 @@
     margin-top: 15px;
     margin-bottom: 15px;
   }
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 47px;
+    margin-bottom: 50px;
+  }
 }
 .blog__element {
   @media screen and (max-width: 767px) {
@@ -49,6 +68,38 @@
       margin-bottom: 0px;
     }
   }
+}
+.blog__container {
+  position: relative;
+  width: 370px;
+  height: 310px;
+}
+.blog__container--one {
+  @extend .blog__container;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../img/img11.png);
+}
+.blog__container--two {
+  @extend .blog__container;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../img/img12.png);
+}
+.blog__container--three {
+  @extend .blog__container;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../img/img13.png);
 }
 .blog__element__text--one {
   position: absolute;
@@ -90,6 +141,9 @@
   @extend .button;
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
   }
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   background-color: #b92c3f;

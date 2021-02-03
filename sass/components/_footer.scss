@@ -5,18 +5,19 @@
 }
 
 .footer {
-  @media screen and (max-width: 767px) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__form__container {
+  @media screen and (min-width: 768px) {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
 
 .footer__title {
   @extend .section__title;
-  //   position: absolute;
-  //   content: "";
   color: $-primary-text-color;
   @media screen and (max-width: 767px) {
     margin-top: 30px;

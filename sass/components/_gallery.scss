@@ -20,7 +20,9 @@
   @media screen and (max-width: 767px) {
     margin-top: 30px;
   }
-  padding-top: 100px;
+  display: inline-block;
+
+  margin-top: 100px;
   color: $-primary-text-color;
 }
 .gallery__text {

@@ -7,12 +7,17 @@
     flex-direction: column;
     align-items: center;
   }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
 }
 .copyright__text {
   @media screen and (max-width: 767px) {
     margin-top: 15px;
     margin-bottom: 5px;
   }
+  display: inline-block;
   color: #b9b9b9;
   font-size: 16px;
   font-weight: 300;
@@ -22,6 +27,8 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 5px;
   }
+  display: inline-block;
+
   color: #b9b9b9;
   font-family: Pacifico;
   font-size: 25px;
@@ -32,6 +39,8 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 5px;
   }
+  display: inline-block;
+
   color: #b9b9b9;
   font-size: 15px;
   font-weight: 300;

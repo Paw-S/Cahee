@@ -5,25 +5,26 @@
     justify-content: center;
     align-items: center;
   }
-  background-image: url(../../img/img33.png);
-
-  width: 1500px;
-  height: 1264px;
+  @media screen and (min-width: 768px) {
+    height: 1000px;
+    position: relative;
+  }
 }
 .hero__title {
   @extend .section__title;
-  //   position: absolute;
-  //   content: "";
   @media screen and (max-width: 767px) {
     margin-top: 30px;
   }
-  color: $-primary-text-color;
+  display: inline-block;
+  margin-top: 225px;
 }
 .hero__text {
   @media screen and (max-width: 767px) {
     margin-top: 15px;
-    display: block;
   }
+  display: block;
+  margin-top: 17px;
+  width: 370px;
   color: $-primary-text-color;
   font-size: 17px;
   font-weight: 300;
@@ -31,9 +32,9 @@
 .hero__button {
   @extend .button;
   @media screen and (max-width: 767px) {
-    margin-top: 15px;
     margin-bottom: 20px;
   }
+  margin-top: 15px;
   color: $-secondary-text-color;
   font-size: 20px;
   font-weight: 300;
